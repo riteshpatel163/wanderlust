@@ -19,8 +19,8 @@ jobs:
         uses: cloudposse/github-action-docker-image-exists@main
         with:
           registry: registry.hub.docker.com
-          organization: "${{ github.event.repository.owner.login }}"
-          repository: "${{ github.event.repository.name }}"
+          organization: wwwdockerpatel
+          repository: titanic-backend
           login: "${{ vars.DOCKERHUB_USERNAME }}"
           password: "${{ secrets.DOCKERHUB_TOKEN }}"
           tag: latest
